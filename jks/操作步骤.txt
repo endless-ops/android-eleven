@@ -1,0 +1,15 @@
+# 需要应用签名
+##在菜单栏中点击Build --> Generate Signed APK
+##单选（Android app Bundle和 APK），然后next
+##点击Create New 或者 选择使用已经存在的
+##填写信息即可
+
+
+
+# 百度定位SDK 申请密钥
+##打开申请密钥的地址：http://lbsyun.baidu.com/apiconsole/key
+##点击创建应用，
+##选择Android SDK
+##在发布版SHA1框中输入证书指纹，该指纹可以通过如下方法获取：在项目的根目录下创建jks文件夹，创建一个.jks签名文件，
+  签名文件的密码保存到密码.txt中，也放入jks文件夹中。在Terminal中输入命令行：
+  keytool -v -list -keystore jks/baidulocation.jks
