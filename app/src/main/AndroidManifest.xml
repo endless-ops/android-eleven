@@ -38,12 +38,14 @@
         </activity>
 
         <!-- 百度定位SDK需要服务 -->
-        <service android:enabled="true"
-            android:process=":remote"
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
             android:exported="true"
-            android:name="com.baidu.location.f" >
+            android:process=":remote" >
             <intent-filter>
-                <action android:name="com.baidu.location.service_v2.2" />
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
             </intent-filter>
         </service>
         <!-- 从百度地图SDK官方申请的密钥 -->
